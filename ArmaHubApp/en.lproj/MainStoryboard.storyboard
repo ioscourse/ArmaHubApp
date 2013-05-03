@@ -226,7 +226,7 @@
             <objects>
                 <viewController id="bkl-Y8-Wld" customClass="ArmaComic1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WrU-JA-1cX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-jf-YXR">
@@ -464,6 +464,7 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="view" destination="ywQ-SM-upO" id="4hL-GD-dLi"/>
+                        <outlet property="webview" destination="ZBV-Eo-p7x" id="bct-V1-eep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zba-Df-JsH" userLabel="First Responder" sceneMemberID="firstResponder"/>

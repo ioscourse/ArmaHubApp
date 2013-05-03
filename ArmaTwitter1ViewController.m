@@ -30,20 +30,10 @@ NSString * urlString;
 {
     
     //Original Twitter Load First
-    
-    NSString * userAgent = @"Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+(KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3";
-    urlString = @"http://reader.mac.com/mobile/v1/http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=Armauraders";
-    NSURL *URL = [NSURL URLWithString:urlString];
-    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:URL];
-    [req setValue:userAgent forHTTPHeaderField:@"User-Agent"];
-    NSURLResponse* response = nil;
-    NSError* error = nil;
-    NSData* data = [NSURLConnection sendSynchronousRequest:req
-                                         returningResponse:&response
-                                                     error:&error];
-    [webview loadData:data MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:URL];
-    
-    [super viewDidLoad];
+      [super viewDidLoad];
+    urlString = @"http://reader.mac.com/mobile/v1/http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=Armarauders";
+    [self Original:urlString];
+
 	// Do any additional setup after loading the view.
 }
 - (void)Original:(NSString*)rssfeed
